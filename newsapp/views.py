@@ -1,12 +1,8 @@
-from tkinter import Entry
-from django.http import HttpResponse
 from django.shortcuts import render
 import requests
 import json
 import pandas as pd
 from .models import historical_database
-import csv
-
 
 def home(request):
 	news_api_request = requests.get('http://newsapi.org/v2/top-headlines?country=in&category=general&apiKey=62de380cdfdc480683ffb6d2624e5ce7')
