@@ -12,6 +12,8 @@ from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 from joblib import dump,load
 
+nltk.download()
+
 df = pd.read_csv('train.csv')
 test = pd.read_csv('test.csv')
 

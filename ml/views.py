@@ -1,10 +1,6 @@
 from django.shortcuts import render
 import pandas as pd
 from newsapp.models import historical_database
-# from joblib import load,dump
-import os 
-
-# load saved model
 
 # Create your views here.
 def fake_news(request):
